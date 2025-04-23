@@ -1,0 +1,487 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* General reset and body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Nav container */
+.navbar {
+  background-color: #1c1c1c;  /* Dark gray background */
+  padding: 15px 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+/* Unordered list inside the nav */
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  /* Center the items horizontally */
+  background-color: skyblue;
+}
+
+/* Individual list items */
+.nav-ul li {
+  padding: 10px 20px;
+  margin: 0 15px;
+  transition: transform 0.2s ease;  /* Animation on hover */
+  
+}
+
+/* Navigation links */
+.nav-ul li a {
+  text-decoration: none;
+  color: #000;  /* Light gray color for text */
+  font-size: 18px;
+  font-weight: 500;  /* Medium weight for better readability */
+  text-transform: uppercase;
+  letter-spacing: 1px;  /* Slightly increase letter spacing for clean look */
+  transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+/* Hover effect on links */
+.nav-ul li a:hover {
+  color: #ff6f61;  /* Soft coral color on hover */
+  transform: scale(1.1);  /* Slightly grow the link on hover */
+}
+
+/* Highlighting active link */
+.nav-ul li.active a {
+  color: #ff6f61;
+  font-weight: 700;  /* Make active link bold */
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: skyblue;
+
+}
+
+.signup-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+/* Container for Login Form */
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+/* Title */
+.login-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* Error and Success Messages */
+.error, .success {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+button:hover:enabled {
+  background-color: #0056b3;
+}
+
+
+/* nav-container: background color and full width */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Space out logo and nav items */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Add some padding around the nav */
+  background-color: #333; /* Background color for nav */
+  color: white; /* Text color */
+}
+
+/* Styling for logo */
+.nav-container .logo img {
+  height: 40px; /* Adjust logo size */
+  width: auto; /* Keep aspect ratio */
+}
+
+/* nav-ul: styling for the unordered list */
+.nav-ul {
+  list-style-type: none;
+  display: flex; /* Align the list items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* nav-ul li: styling for each list item */
+.nav-ul li {
+  margin-left: 20px; /* Space between each nav item */
+}
+
+/* Styling for Links inside list items */
+.nav-ul li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size for nav items */
+}
+
+/* Hover effect for links */
+.nav-ul li a:hover {
+  color: #f0f0f0; /* Lighten the text on hover */
+}
+
+/* Styling for buttons (Logout) */
+.nav-ul button {
+  background-color: #f44336; /* Red background for logout button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-ul button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Align signup and login buttons to the right */
+.signupbtn, .loginbtn {
+  margin-left: 20px; /* Space between SignUp and Login buttons */
+}
+
+/* Container for the AddProduct form */
+.add-product-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input.input-error {
+  border-color: #e74c3c;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button.submit-button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.update-product-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-product-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-error {
+  border-color: #e74c3c;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.submit-button:active {
+  background-color: #1e7e34;
+}
+
+.submit-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    flex-direction: column;  /* Stack items vertically on smaller screens */
+    text-align: left;
+  }
+
+  .nav-container {
+    justify-content: flex-start; /* Keep logo and nav aligned to the left */
+}
+  .nav-ul li {
+    width: 100%;
+    padding: 12px 0;
+    margin: 5px 0;  /* Add margin between items when stacked */
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
